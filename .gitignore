@@ -1,0 +1,5 @@
+.venv/
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/

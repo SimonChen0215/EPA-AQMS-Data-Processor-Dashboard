@@ -1,0 +1,97 @@
+input[type="number"] { max-width: 80%; }
+
+div.outer {
+  position: fixed;
+  top: 51px; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Customize fonts */
+body, label, input, button, select { font-family: 'Helvetica Neue', Helvetica; font-weight: 200; }
+h1, h2, h3, h4 { font-weight: 400; }
+
+#nsw_controls, #qld_controls, #vic_controls, #sa_controls {
+  background-color: white;
+  padding: 0 10px 10px 10px;
+  cursor: default;
+  opacity: 0.9;
+  zoom: 0.9;
+  transition: opacity 500ms 5s;
+}
+
+#nsw_controls:hover, #qld_controls:hover, #vic_controls:hover, #sa_controls:hover {
+  opacity: 0.75;
+  transition-delay: 0;
+}
+
+/* Fix picker dropdown colors */
+.bootstrap-select .dropdown-toggle {
+  background-color: #fff !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+}
+.bootstrap-select .dropdown-menu {
+  background-color: #fff !important;
+}
+.bootstrap-select .dropdown-menu li a,
+.bootstrap-select .dropdown-menu li a span.text {
+  color: #333 !important;
+}
+.bootstrap-select .dropdown-menu li a:hover,
+.bootstrap-select .dropdown-menu li.active a,
+.bootstrap-select .dropdown-menu li.selected a {
+  background-color: #337ab7 !important;
+  color: #fff !important;
+}
+.bootstrap-select .dropdown-menu li.active a span.text,
+.bootstrap-select .dropdown-menu li.selected a span.text,
+.bootstrap-select .dropdown-menu li a:hover span.text {
+  color: #fff !important;
+}
+.bootstrap-select .dropdown-menu .bs-searchbox input {
+  background-color: #fff !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+}
+.bootstrap-select .dropdown-menu .bs-actionsbox .btn-group .btn {
+  background-color: #fff !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+}
+#controls label, #qld_controls label, #vic_controls label {
+  color: #333 !important;
+}
+
+/* Center modal vertically */
+.modal {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.modal-dialog {
+  margin: 0;
+}
+.modal-footer {
+  border-top: none;
+  padding: 0 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.modal-footer .btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.modal-content {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+/* Unified button hover */
+.btn:hover {
+  opacity: 0.88;
+  transition: opacity 0.15s;
+}
